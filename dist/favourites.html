@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <title>Favourites</title>
+    <script
+      src="https://kit.fontawesome.com/206cb9b98d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="m-0 p-0 box-border">
+    <section class="favourites">
+      <div class="mt-10 mb-8 mr-32 ml-32">
+        <header class="navigation-bar flex justify-between items-center">
+          <div class="logo">
+            <h1 class="font-logo text-5xl font-bold">TasteOfTheGlobe</h1>
+          </div>
+          <div class="navbar">
+            <ul class="navlinks flex">
+              <li><a href="../index.html" class="title">Home</a></li>
+              <li>
+                <a href="#" class="title"
+                  >Category <i class="text-sm fa-solid fa-angle-down"></i
+                ></a>
+                <div class="drop-down">
+                  <ul>
+                    <li><a href="#">Breakfast</a></li>
+                    <li><a href="#">Dinner</a></li>
+                    <li><a href="#">Lunch</a></li>
+                    <li><a href="#">Desserts</a></li>
+                    <li><a href="#">Soups</a></li>
+                    <li><a href="#">Pasta</a></li>
+                    <li><a href="#">Meat</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#" class="title"
+                  >Cuisines <i class="text-sm fa-solid fa-angle-down"></i
+                ></a>
+                <div class="drop-down">
+                  <ul>
+                    <li><a href="#">Asian</a></li>
+                    <li><a href="#">Bosnian</a></li>
+                    <li><a href="#">Turkish</a></li>
+                    <li><a href="#">Italian</a></li>
+                    <li><a href="#">American</a></li>
+                    <li><a href="#">Mexican</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="favourites.html" class="title">Favourites</a></li>
+              <li><a href="addrecipe.html" class="title">Add Recipe</a></li>
+              <li><a href="./profile.html" class="title">Profile</a></li>
+            </ul>
+          </div>
+          <!-- search and login icons -->
+          <div class="info flex">
+            <button>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button><i class="fa-solid fa-user-plus"></i></button>
+          </div>
+        </header>
+        <div class="border-b border-black mt-32 flex justify-between">
+          <div class="flex items-start gap-5">
+            <div
+              class="rounded-full bg-orange-600 w-12 h-12 flex justify-center items-center mb-4"
+            >
+              <i class="text-xl text-white fa-solid fa-heart"></i>
+            </div>
+            <h1 class="font-serif text-black text-4xl font-black">
+              Favourites
+            </h1>
+          </div>
+
+          <select name="sort" id="sort" class="font-info rounded-sm h-10 w-36">
+            <option value="breakfast">Breakfast</option>
+            <option value="dinner">Dinner</option>
+            <option value="desserts">Desserts</option>
+            <option value="pancakes">Pancakes</option>
+          </select>
+        </div>
+        <div class="flex gap-6 mt-6">
+          <span class="hover:text-orange-600">(98 Recipes)</span>
+          <div class="hover:text-orange-600">
+            <i class="fa-solid fa-clipboard-check"></i>
+            <span>Select</span>
+          </div>
+          <div class="hover:text-orange-600">
+            <i class="fa-regular fa-trash-can"></i>
+            <span>Delete</span>
+          </div>
+        </div>
+
+         <div class="grid grid-cols-4 gap-3 mt-14">
+            <div class="img-recipe">
+              <a href="#" class="chocolate-cake">
+                <figure>
+                  <img src="imgs2/chocolatecake.jpeg" alt="chocolate-cake" />
+                </figure>
+              </a>
+              <a href="#" class="chocolate-cake"
+                ><h5>Chocolate Cake With Cherry Glaze</h5></a
+              >
+            </div>
+            <div class="img-recipe">
+              <a href="#" class="mini-tart">
+                <figure>
+                  <img src="imgs2/minitart.jpeg" alt="mini-tart" />
+                </figure>
+              </a>
+              <a href="#" class="mini-tart"><h5>Mini Creamy Tart</h5></a>
+            </div>
+            <div class="img-recipe">
+              <a href="#" class="pancakes">
+                <figure>
+                  <img src="imgs2/pancakes.webp" alt="pancakes" />
+                </figure>
+              </a>
+              <a href="#" class="pancakes"><h5>American Pancakes</h5></a>
+            </div>
+            <div class="img-recipe">
+              <a href="#" class="fig-cake">
+                <figure>
+                  <img src="imgs2/fig-cake.jpg" alt="fig-cake" />
+                </figure>
+              </a>
+              <a href="#" class="fig-cake"
+                ><h5>Double Thick Layered Sponge cake</h5></a
+              >
+            </div>
+            <div class="img-recipe">
+              <a href="#" class="baklava">
+                <figure>
+                  <img src="imgs2/baklava.jpeg" alt="baklava" />
+                </figure>
+              </a>
+              <a href="#" class="baklava"><h5>Baklava</h5></a>
+            </div>
+            <div class="img-recipe">
+              <a href="#" class="banana-bread">
+                <figure>
+                  <img src="imgs2/bananabread.jpeg" alt="banana-bread" />
+                </figure>
+              </a>
+              <a href="#" class="banana-bread"><h5>Banana Bread</h5></a>
+            </div>
+            <div class="img-recipe">
+              <a href="#" class="caramel-cake">
+                <figure>
+                  <img src="imgs2/caramelcake.jpeg" alt="caramel-cake" />
+                </figure>
+              </a>
+              <a href="#" class="caramel-cake"><h5>Caramel cake</h5></a>
+            </div>
+            <div class="img-recipe">
+              <a href="#" class="macaroons">
+                <figure>
+                  <img src="imgs2/macaroons.jpg" alt="macaroons" />
+                </figure>
+              </a>
+              <a href="#" class="macaroons"><h5>Macaroons</h5></a>
+            </div>
+            <div class="img-recipe">
+              <a href="#" class="lavacake">
+                <figure>
+                  <img src="imgs2/lavacake.jpeg" alt="lavacake" />
+                </figure>
+              </a>
+              <a href="#" class="lavacake"><h5>Lavacake</h5></a>
+            </div>
+            <div class="img-recipe">
+              <a href="#" class="eggs-avocado">
+                <figure>
+                  <img src="imgs2/eggs-avocado.webp" alt="eggs-avocado" />
+                </figure>
+              </a>
+              <a href="#" class="eggs-avocado"><h5>Eggs and Avocado Toast</h5></a>
+            </div>
+            <div class="img-recipe">
+              <a href="#" class="fig-oatmeal">
+                <figure>
+                  <img src="imgs2/fig-oatmeal.jpeg" alt="fig-oatmeal" />
+                </figure>
+              </a>
+              <a href="#" class="fig-oatmeal"><h5>Fig and Raisins Oatmeal</h5></a>
+            </div>
+            <div class="img-recipe">
+              <a href="#" class="cinnamon-rolls">
+                <figure>
+                  <img src="imgs2/cinnaomn-rolls.jpeg" alt="cinnamon-rolls" />
+                </figure>
+              </a>
+              <a href="#" class="cinnamon-rolls"><h5>Cinnamon Rolls</h5></a>
+            </div>
+          </div>
+
+          <section class="footer">
+          <div class="mt-60 border-t-[1px] border-black pt-7">
+            <span class=""
+              >&copy; 2023 TasteOfTheGlobe - All rights reserved</span
+            >
+            <i class="text-lg float-right ml-3 fa-brands fa-twitter"></i>
+            <i class="text-lg float-right fa-brands fa-instagram"></i>
+          </div>
+        </section>
+      </div>
+    </section>
+  </body>
+</html>

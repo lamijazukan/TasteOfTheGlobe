@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Noto+Sans&family=Pacifico&family=Rubik&family=Style+Script&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar li a {
+  @apply text-lg pl-4 pr-4 font-info;
+}
+.navbar a:hover {
+  @apply text-red-500;
+}
+.info button i {
+  @apply ml-4 text-black text-xl;
+}
+.info i:hover {
+  @apply text-red-500;
+}
+.navigation-bar ul li {
+  @apply relative;
+}
+.navlinks li:hover .drop-down {
+  @apply block absolute bg-white shadow-xl z-10;
+}
+.drop-down ul {
+  @apply block m-4;
+}
+.drop-down li a {
+  @apply text-black font-info text-lg;
+}
+
+.drop-down li {
+  @apply w-32 pt-2.5 pb-2.5 pl-1;
+}
+.drop-down {
+  @apply hidden;
+}
+.card1 h2,
+.card2 h2 {
+  @apply font-serif text-3xl font-semibold;
+}
+.instructions li {
+  @apply pt-6 font-info text-lg flex items-start justify-between;
+}
+.instructions li span {
+  @apply  bg-red-700 text-sm text-white text-center rounded-full h-[25px] w-[70px] mr-7 mt-1 pt-1;
+}
+
+input[type="checkbox"] {
+  @apply rounded-full  w-5 h-5 border-red-300 text-red-500 focus:ring-red-200;
+}
+.span1 {
+  @apply font-info text-lg;
+}
+.img-recipe figure img {
+  @apply w-full h-[200px] rounded-lg;
+}
+.img-recipe a h5 {
+  @apply text-black font-sans pt-2 font-medium text-xl;
+}
+.stars i {
+  @apply text-orange-600;
+}
+

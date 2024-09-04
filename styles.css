@@ -1,0 +1,675 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Noto+Sans&family=Pacifico&family=Rubik&family=Style+Script&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* main container */
+.container {
+  margin: 35px 130px;
+}
+
+/* nav bar */
+.navigation-bar {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-between;
+  align-items: center;
+  /* background: green; */
+}
+
+.logo {
+  font-family: "Cookie";
+  font-size: 30px;
+  /* background: yellow; */
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  /* background: pink; */
+}
+
+.navigation-bar ul li {
+  position: relative;
+}
+
+.nav-links .title {
+  /* display: inline-block; */
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  font-family: "Rubik";
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  color: rgb(193, 87, 110);
+}
+
+.nav-links li:hover .drop-down {
+  display: block;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.drop-down ul {
+  display: block;
+  margin: 15px;
+}
+
+.title i {
+  font-size: 15px;
+}
+
+.drop-down li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Rubik";
+  font-size: 18px;
+}
+
+.drop-down li {
+  width: 130px;
+  padding: 10px 14px;
+}
+
+.drop-down {
+  display: none;
+}
+
+.info {
+  display: flex;
+  /* background: red; */
+  margin-right: 15px;
+}
+.info button {
+  border: none;
+  background-color: transparent;
+}
+.info button i {
+  font-size: 20px;
+  margin-left: 18px;
+  color: black;
+}
+
+.info i:hover {
+  color: rgb(193, 87, 110);
+}
+
+/* pop up search */
+.overlay {
+  height: 15%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #eceaea;
+  box-shadow: 5px 3px 5px 2px rgba(211, 211, 211, 0.9);
+}
+
+.overlay-content {
+  position: relative;
+  top: 26%;
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+  margin: auto;
+  transform: translate (-50%, -50%);
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 45px;
+  font-size: 40px;
+  cursor: pointer;
+  color: black;
+}
+
+.overlay .closebtn:hover {
+  color: rgb(193, 87, 110);
+}
+
+.overlay input[type="text"] {
+  padding: 15px;
+  font-size: 17px;
+  font-family: "Rubik";
+  border: none;
+  border-bottom: solid 2px black;
+  float: left;
+  width: 90%;
+  background: transparent;
+  outline: none;
+}
+.myOverlay input[type="text"]::placeholder {
+  padding: 0;
+}
+.overlay button {
+  float: left;
+  width: 10%;
+  padding: 15px;
+  background: transparent;
+  font-size: 17px;
+  border: none;
+  border-bottom: solid 2px black;
+  cursor: pointer;
+}
+.overlay button i {
+  padding-left: 50px;
+}
+.overlay button i:hover {
+  color: rgb(193, 87, 110);
+}
+
+/* signup pop up box */
+.form-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.form-content {
+  position: absolute;
+  top: 20%;
+  left: 36%;
+  transform: translate (-50%, -50%);
+  background: #fff;
+  width: 410px;
+  padding: 30px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.form-content .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: black;
+}
+.form-content .close-btn:hover {
+  color: orangered;
+}
+
+.form-content .heading {
+  font-size: 35px;
+  font-family: "Serif";
+  font-weight: 600;
+  text-align: center;
+}
+
+.form-content form {
+  margin-top: -20px;
+}
+
+.form-content form .data {
+  height: 45px;
+  width: 100%;
+  margin: 40px 0;
+}
+
+form .data input {
+  height: 100%;
+  width: 100%;
+  padding-left: 10px;
+  font-size: 17px;
+  border: none;
+  border-bottom: solid 2px black;
+  outline: none;
+}
+form .data input:focus {
+  border-bottom: solid 2px orangered;
+}
+form .btn button {
+  height: 35px;
+  width: 100%;
+  text-align: center;
+  background-color: orangered;
+  border: none;
+  font-family: "Rubik";
+  font-size: 17px;
+  color: white;
+  border-radius: 5px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 6px;
+  cursor: pointer;
+}
+
+/* recipe card section */
+.card {
+  background-color: rgba(165, 42, 42, 0.821);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  border-radius: 1.5em;
+  width: 100%;
+  height: 500px;
+}
+
+.card-img img {
+  /* width: 700px;
+    height: 500px; */
+  flex: 55%;
+  position: relative;
+  border-radius: 1.5em 0 0 1.5em;
+  display: block;
+  width: 100%;
+  height: 500px;
+}
+
+.cheescake-description {
+  display: flex;
+  flex-direction: column;
+  flex: 45%;
+  padding-left: 50px;
+  padding-right: 120px;
+}
+
+.cheescake-description h1 {
+  font-size: 40px;
+}
+
+.cheescake-description p {
+  font-size: 17px;
+  font-family: "Noto Sans";
+  text-align: justify;
+  padding-top: 10px;
+  word-wrap: break-word;
+}
+
+.content-footer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 5px;
+  right: 190px;
+}
+
+.arrow a i {
+  border-radius: 50%;
+  border: none;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  padding: 15px;
+
+  color: rgb(220, 105, 60);
+  background-color: rgb(241, 228, 228);
+}
+.arrow a i:hover {
+  background-color: rgb(242, 142, 142);
+  color: white;
+}
+
+/* popular categories section */
+.popular-categories .heading-1 {
+  font-size: 40px;
+  padding: 60px 40px 40px 0px;
+}
+
+.categories-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.categories-container figure img {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  transition: transform 0.5s ease;
+}
+
+.categories-container a {
+  text-decoration: none;
+}
+
+.categories-container .category h6 {
+  font-size: 20px;
+  font-family: Noto Sans;
+  color: black;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.categories-container .category figure {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  overflow: hidden;
+}
+
+.categories-container figure img:hover {
+  transform: scale(1.3);
+}
+
+.categories-container .category h6:hover {
+  color: rgba(156, 60, 81, 0.773);
+}
+
+/* super delicious recipes section */
+.super-delicious .heading-2 {
+  font-size: 40px;
+  padding: 60px 40px 40px 0px;
+}
+
+.delicious-recipes-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.delicious-recipes-container figure img {
+  border-radius: 0.5rem;
+  width: 335px;
+  height: 220px;
+  transition: transform 0.5s ease;
+}
+
+.recipe-delicious a {
+  text-decoration: none;
+}
+
+.stars i {
+  padding: 10px 0px;
+  font-size: 18px;
+  color: #FFA756;
+  transition: color 0.2s ease;
+}
+
+.stars i.active{
+ color: orangered;
+}
+
+.stars1 i {
+  padding: 10px 0px;
+  font-size: 18px;
+  color: #FFA756;
+  transition: color 0.2s ease;
+}
+
+.stars1 i.active{
+ color: orangered;
+}
+
+.stars2 i {
+  padding: 10px 0px;
+  font-size: 18px;
+  color: #FFA756;
+  transition: color 0.2s ease;
+}
+
+.stars2 i.active{
+ color: orangered;
+}
+
+.recipe-delicious a h5 {
+  font-family: "Noto Sans";
+  font-size: 20px;
+  color: black;
+}
+
+.delicious-recipes-container .recipe-delicious figure {
+  border-radius: 0.5rem;
+  width: 335px;
+  height: 220px;
+  overflow: hidden;
+}
+
+.delicious-recipes-container figure img:hover {
+  transform: scale(1.3);
+}
+
+.delicious-recipes-container a h5:hover {
+  color: rgba(156, 60, 81, 0.773);
+}
+
+/* second container */
+.container-2 {
+  background-color: rgb(251, 175, 175);
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-2 .email-sending {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 400px;
+}
+
+.email-sending .title {
+  font-size: 70px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.email-sending .text2 {
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.email-box input[type="email"] {
+  border: none;
+  border-radius: 4px;
+  height: 80px;
+  width: 400px;
+  font-size: 20px;
+  cursor:
+}
+
+.email-box input[type="email"]::placeholder {
+  padding-left: 15px;
+}
+
+.email-box button {
+  height: 80px;
+  width: 150px;
+  background-color: orangered;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor:pointer;
+}
+
+.container-2 .message{
+  background:white;
+  width: 550px;
+  height: 60px;
+  margin-top:10px;
+  opacity: 0.6;
+  border-radius: 3px;
+  display:none;
+}
+.message .greeting{
+  font-size: 30px;
+  text-align:center;
+  padding-top: 10px;
+  color:#992627;
+  text-shadow: 1px 1px #BC4A3C ;
+}
+
+.container-2 .message2{
+  background:white;
+  width: 550px;
+  height: 60px;
+  margin-top:10px;
+  opacity: 0.6;
+  border-radius: 3px;
+  display:none;
+}
+.message2 .fail{
+  font-size: 30px;
+  text-align:center;
+  padding-top: 10px;
+  color:#992627;
+  text-shadow: 1px 1px #BC4A3C ;
+}
+/* collections section */
+.cards .heading-3 {
+  font-size: 50px;
+  padding: 30px 40px 30px 0px;
+}
+.recipe-collections {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.collection {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+  border-radius: 0.5rem;
+}
+.collection img {
+  height: 350px;
+  width: 100%;
+  border-radius: 0.5rem 0.5rem 0 0;
+  transition: transform 0.5s ease;
+}
+.img-wrapper {
+  height: 350px;
+  width: 100%;
+  border-radius: 0.5rem 0.5rem 0 0;
+  overflow: hidden;
+}
+.collection .img-wrapper img:hover {
+  transform: scale(1.3);
+}
+
+.card-footer p {
+  font-size: 30px;
+  padding: 25px;
+  font-family: "Noto Sans";
+  font-weight: bold;
+}
+.card-footer p:hover {
+  color: orangered;
+}
+.card-footer button {
+  border: solid thin;
+  border-radius: 0.2rem;
+  font-size: 18px;
+  height: 40px;
+  width: 150px;
+  float: right;
+  margin-right: 25px;
+  margin-bottom: 30px;
+  background: none;
+  cursor: pointer;
+}
+
+/* latest recipes collection */
+.latest-recipes .heading-4 {
+  font-size: 40px;
+  padding: 70px 40px 30px 0px;
+}
+.latest-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.img-recipe figure img {
+  height: 200px;
+  width: 100%;
+  border-radius: 0.5rem;
+  transition: transform 0.5s ease;
+}
+.img-recipe a {
+  text-decoration: none;
+}
+.img-recipe a h5 {
+  font-family: "Noto Sans";
+  font-size: 18px;
+  color: black;
+  padding-top: 10px;
+}
+
+.latest-cards .img-recipe figure {
+  border-radius: 0.5rem;
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+}
+.latest-cards figure img:hover {
+  transform: scale(1.3);
+}
+.latest-cards a h5:hover {
+  color: rgba(156, 60, 81, 0.773);
+}
+
+.img-recipe{
+  display:none;
+}
+.img-recipe:nth-child(1){
+  display: block;
+}
+.img-recipe:nth-child(2){
+  display: block;
+}
+.img-recipe:nth-child(3){
+  display: block;
+}
+.img-recipe:nth-child(4){
+  display: block;
+}
+.img-recipe:nth-child(5){
+  display: block;
+}
+.img-recipe:nth-child(6){
+  display: block;
+}
+.img-recipe:nth-child(7){
+  display: block;
+}
+.img-recipe:nth-child(8){
+  display: block;
+}
+.latest-recipes .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.latest-recipes .center button {
+  border: solid thin;
+  border-radius: 0.2rem;
+  font-size: 20px;
+  height: 50px;
+  width: 200px;
+  margin: 70px;
+  background: none;
+  cursor: pointer;
+}
+.footer {
+  border-top: solid thin;
+  margin-top: 100px;
+}
+.footer div {
+  padding-top: 30px;
+  font-size: 15px;
+  font-family: "Noto Sans";
+}
+.footer i {
+  float: right;
+  padding-left: 20px;
+  font-size: 20px;
+}

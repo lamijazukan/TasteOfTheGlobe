@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <title>Recipe</title>
+    <script
+      src="https://kit.fontawesome.com/206cb9b98d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="m-0 p-0 box-border">
+    <section class="recipe-page">
+      <div class="mt-10 mb-8 mr-32 ml-32">
+        <header class="navigation-bar flex justify-between items-center">
+          <div class="logo">
+            <h1 class="font-logo text-5xl font-bold">TasteOfTheGlobe</h1>
+          </div>
+          <div class="navbar">
+            <ul class="navlinks flex">
+              <li><a href="../index.html" class="title">Home</a></li>
+              <li>
+                <a href="#" class="title"
+                  >Category <i class="text-sm fa-solid fa-angle-down"></i
+                ></a>
+                <div class="drop-down">
+                  <ul>
+                    <li><a href="#">Breakfast</a></li>
+                    <li><a href="#">Dinner</a></li>
+                    <li><a href="#">Lunch</a></li>
+                    <li><a href="#">Desserts</a></li>
+                    <li><a href="#">Soups</a></li>
+                    <li><a href="#">Pasta</a></li>
+                    <li><a href="#">Meat</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#" class="title"
+                  >Cuisines <i class="text-sm fa-solid fa-angle-down"></i
+                ></a>
+                <div class="drop-down">
+                  <ul>
+                    <li><a href="#">Asian</a></li>
+                    <li><a href="#">Bosnian</a></li>
+                    <li><a href="#">Turkish</a></li>
+                    <li><a href="#">Italian</a></li>
+                    <li><a href="#">American</a></li>
+                    <li><a href="#">Mexican</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="favourites.html" class="title">Favourites</a></li>
+              <li><a href="addrecipe.html" class="title">Add Recipe</a></li>
+              <li><a href="./profile.html" class="title">Profile</a></li>
+            </ul>
+          </div>
+          <!-- search and login icons -->
+          <div class="info flex">
+            <button>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button><i class="fa-solid fa-user-plus"></i></button>
+          </div>
+        </header>
+        <section class="img-section">
+          <div class="flex justify-end mt-16">
+            <a href="#" class="text-2xl hover:text-orange-600"
+              ><i class="fa-solid fa-arrow-up-from-bracket"></i
+            ></a>
+            <a href="#" class="text-2xl hover:text-orange-600"
+              ><i class="pl-6 fa-regular fa-heart"></i
+            ></a>
+          </div>
+          <h1 class="text-5xl font-medium pt-7 font-serif">
+            Forest fruit Cream Cheesecake
+          </h1>
+          <div class="mt-5 flex gap-7 items-center">
+            <div class="flex gap-3 items-center">
+              <a href="#"
+                ><img
+                  src="imgs2/procilepic3.jpeg"
+                  alt="profile-pic3"
+                  class="rounded-full w-8 shadow-xl"
+              /></a>
+              <span class="text-xs font-info">Alyan Hamad</span>
+            </div>
+            <div class="flex gap-1 items-center">
+              <i class="text-xs fa-regular fa-calendar"></i>
+              <span class="text-xs font-info">Yesterday</span>
+            </div>
+            <div class="flex gap-1 items-center">
+              <i class="text-xs fa-regular fa-comment"></i>
+              <span class="text-xs font-info">25</span>
+            </div>
+            <div class="stars text-sm">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="border-b-[1px] border-gray-200 mt-12"></div>
+          <!--img-->
+          <div>
+            <p class="pt-6 pb-9 text-xl font-info">
+              One thing I learned living in the Canarsie section of Brooklyn, NY
+              was how to cook a good Italian meal. Here is a recipe I created
+              after having this dish in a restaurant. Enjoy!
+            </p>
+            <img
+              src="imgs2/cheesecake2.jpeg"
+              alt="cheescake"
+              class="w-full h-auto rounded-2xl"
+            />
+            <div class="flex mt-12 items-center">
+              <div class="pr-6 border-r-2">
+                <h5 class="text-sm text-gray-500">PREP TIME</h5>
+                <h5>15 MIN</h5>
+              </div>
+              <div class="pl-6 pr-6 border-r-2">
+                <h5 class="text-sm text-gray-500">PREP TIME</h5>
+                <h5>15 MIN</h5>
+              </div>
+              <div class="pl-6 pr-6 border-r-2">
+                <h5 class="text-sm text-gray-500">SERVINGS</h5>
+                <h5>4 PERSONS</h5>
+              </div>
+              <div class="pl-6 pr-6">
+                <a href="#" class="text-xl"
+                  ><i class="fa-solid fa-print"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="recipe-steps">
+          <div class="grid grid-cols-2 mt-10">
+            <!-- Check box -->
+            <div class="card1">
+              <h2>Ingredients</h2>
+              <h3 class="font-info pt-4 pb-4 text-lg font-semibold text-black">
+                For the crust
+              </h3>
+
+              <div class="flex flex-col gap-4">
+                <label>
+                  <input type="checkbox" class="peer" />
+                  <span
+                    class="span1 ml-1 peer-checked:line-through peer-checked:text-gray-300 transition-all"
+                  >
+                    400g graham crackers
+                  </span>
+                </label>
+                <label>
+                  <input type="checkbox" class="peer" />
+                  <span
+                    class="span1 ml-1 peer-checked:line-through peer-checked:text-gray-400 transition-all"
+                  >
+                    150g unsalted butters, melted
+                  </span>
+                </label>
+              </div>
+
+              <h3 class="font-info pt-6 pb-4 text-lg font-semibold text-black">
+                For the cheescake
+              </h3>
+              <div class="flex flex-col gap-4">
+                <label>
+                  <input type="checkbox" class="peer" />
+                  <span
+                    class="span1 ml-1 peer-checked:line-through peer-checked:text-gray-400 transition-all"
+                  >
+                    300g marshmallows
+                  </span>
+                </label>
+                <label>
+                  <input type="checkbox" class="peer" />
+                  <span
+                    class="span1 ml-1 peer-checked:line-through peer-checked:text-gray-400 transition-all"
+                  >
+                    175g unsalted butter, melted
+                  </span>
+                </label>
+                <label>
+                  <input type="checkbox" class="peer" />
+                  <span
+                    class="span1 ml-1 peer-checked:line-through peer-checked:text-gray-400 transition-all"
+                  >
+                    500g Philadelphia cream cheese, softened
+                  </span>
+                </label>
+                <label>
+                  <input type="checkbox" class="peer" />
+                  <span
+                    class="span1 ml-1 peer-checked:line-through peer-checked:text-gray-400 transition-all"
+                  >
+                    250ml thickened/whipping cream, warm
+                  </span>
+                </label>
+                <label>
+                  <input type="checkbox" class="peer" />
+                  <span
+                    class="span1 ml-1 peer-checked:line-through peer-checked:text-gray-400 transition-all"
+                  >
+                    3 tbsp powdered gelatin + 3 tbsp water
+                  </span>
+                </label>
+                <label>
+                  <input type="checkbox" class="peer" />
+                  <span
+                    class="span1 ml-1 peer-checked:line-through peer-checked:text-gray-400 transition-all"
+                  >
+                    5 drops purple food gel
+                  </span>
+                </label>
+                <label>
+                  <input type="checkbox" class="peer" />
+                  <span
+                    class="span1 ml-1 peer-checked:line-through peer-checked:text-gray-400 transition-all"
+                  >
+                    3 drops blue food gel
+                  </span>
+                </label>
+              </div>
+            </div>
+
+            <div class="card2">
+              <h2>Instructions</h2>
+
+              <ul class="instructions">
+                <li>
+                  <span>1</span> To prepare crust add graham crackers to a food
+                  processor and process until you reach fine crumbs. Add melted
+                  butter and pulse 3-4 times to coat crumbs with butter.
+                </li>
+                <li>
+                  <span>2</span> To prepare crust add graham crackers to a food
+                  processor and process until you reach fine crumbs. Add melted
+                  butter and pulse 3-4 times to coat crumbs with butter.
+                </li>
+                <li>
+                  <span>3</span> To prepare crust add graham crackers to a food
+                  processor and process until you reach fine crumbs. Add melted
+                  butter and pulse 3-4 times to coat crumbs with butter.
+                </li>
+                <li>
+                  <span>4</span> To prepare crust add graham crackers to a food
+                  processor and process until you reach fine crumbs. Add melted
+                  butter and pulse 3-4 times to coat crumbs with butter.
+                </li>
+                <li>
+                  <span>5</span> To prepare crust add graham crackers to a food
+                  processor and process until you reach fine crumbs. Add melted
+                  butter and pulse 3-4 times to coat crumbs with butter.
+                </li>
+                <li>
+                  <span>6</span> To prepare crust add graham crackers to a food
+                  processor and process until you reach fine crumbs. Add melted
+                  butter and pulse 3-4 times to coat crumbs with butter.
+                </li>
+                <li>
+                  <span>7</span> To prepare crust add graham crackers to a food
+                  processor and process until you reach fine crumbs. Add melted
+                  butter and pulse 3-4 times to coat crumbs with butter.
+                </li>
+                <li>
+                  <span>8</span> To prepare crust add graham crackers to a food
+                  processor and process until you reach fine crumbs. Add melted
+                  butter and pulse 3-4 times to coat crumbs with butter.
+                </li>
+                <li>
+                  <span>9</span> To prepare crust add graham crackers to a food
+                  processor and process until you reach fine crumbs. Add melted
+                  butter and pulse 3-4 times to coat crumbs with butter.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="feedback">
+          <div class="border-b-8 border-orange-600 mt-24">
+            <h1 class="font-serif text-6xl font-bold pb-6">
+              Already made this?
+            </h1>
+            <button
+              class="border-[1px] border-black rounded-md font-info text-base mb-12 pr-10 pl-10 pt-1 pb-1 hover:bg-black hover:text-white"
+            >
+              Share your feedback
+            </button>
+          </div>
+        </section>
+        <section class="comments">
+          <div class="border-b-[1px] border-gray-400 mt-36">
+            <h1 class="font-serif text-6xl font-bold pb-7">
+              Comments <span class="text-3xl font-semibold">(25)</span>
+            </h1>
+          </div>
+          <div class="flex gap-4 mt-7 border-b-[0.1rem]">
+            <div>
+              <img
+                src="imgs2/profilepic.webp"
+                class="rounded-full h-10 w-14 shadow-xl"
+                alt="profilepic"
+              />
+            </div>
+            <div class="font-info">
+              <h2 class="font-bold text-lg pb-2">Kuramoto Chou</h2>
+              <h4 class="text-gray-500 pb-3">45min ago</h4>
+              <p class="text-lg text-justify pb-6">
+                Synth polaroid bitters chillwave pickled. Vegan disrupt tousled,
+                Portland keffiyeh aesthetic food truck sriracha cornhole
+                single-origin coffee church-key roof party.
+              </p>
+
+              <div class="text-sm text-gray-500 mb-3">
+                <a href="#" class="pr-2 hover:text-orange-600"
+                  ><i class="pr-2 fa-regular fa-comment"></i>Reply (2)</a
+                >
+                <a href="#" class="hover:text-orange-600"
+                  ><i class="pr-2 fa-regular fa-heart"></i>48</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-4 mt-7 border-b-[0.1rem]">
+            <div>
+              <img
+                src="imgs2/profilpic2.jpeg"
+                class="rounded-full h-10 w-14 shadow-xl"
+                alt="profilepic2"
+              />
+            </div>
+            <div class="font-info">
+              <h2 class="font-bold text-lg pb-2">Suhaira Jabour</h2>
+              <h4 class="text-gray-500 pb-3">45min ago</h4>
+              <p class="text-lg text-justify pb-6">
+                Synth polaroid bitters chillwave pickled. Vegan disrupt tousled,
+                Portland keffiyeh aesthetic food truck sriracha cornhole
+                single-origin coffee church-key roof party.
+              </p>
+
+              <div class="text-sm text-gray-500 mb-3">
+                <a href="#" class="pr-2 hover:text-orange-600"
+                  ><i class="pr-2 fa-regular fa-comment"></i>Reply (2)</a
+                >
+                <a href="#" class="hover:text-orange-600"
+                  ><i class="pr-2 fa-regular fa-heart"></i>48</a
+                >
+              </div>
+            </div>
+          </div>
+          <button
+            class="border-[1px] border-black mt-8 rounded-sm w-full pt-3 pb-3 text-lg font-info hover:bg-black hover:text-white"
+          >
+            Load 25 more comments
+          </button>
+        </section>
+        <section class="add-comment">
+          <h1 class="font-serif text-3xl font-semibold pt-20 pb-7">
+            Write a comment
+          </h1>
+          <div
+            class="bg-gray-100 w-full h-[300px] rounded-sm flex justify-between"
+          >
+            <div>
+              <form action="">
+                <textarea
+                  class="border-none bg-gray-100 resize-none m-6 font-info w-[700px] h-[250px] focus:outline-none focus:ring-0"
+                >
+write here...</textarea
+                >
+              </form>
+            </div>
+
+            <div class="">
+              <button
+                class="border-[1px] border-orange-600 rounded-sm font-info text-white bg-orange-600 mr-10 mt-60 pt-1 pb-1 pr-10 pl-10 hover:bg-orange-400 hover:border-orange-400"
+              >
+                Post comment
+              </button>
+            </div>
+          </div>
+        </section>
+        <!-- You might like section -->
+        <section class="might-like">
+          <h1 class="pt-20 text-3xl font-serif font-semibold">
+            You might also like
+          </h1>
+          <!-- // -->
+          <div class="grid grid-cols-4 gap-3 mt-7">
+            <div class="img-recipe">
+              <a href="#" class="chocolate-cake">
+                <figure>
+                  <img src="imgs2/chocolatecake.jpeg" alt="chocolate-cake" />
+                </figure>
+              </a>
+              <a href="#" class="chocolate-cake"
+                ><h5>Chocolate Cake With Cherry Glaze</h5></a
+              >
+            </div>
+            <div class="img-recipe">
+              <a href="#" class="mini-tart">
+                <figure>
+                  <img src="imgs2/minitart.jpeg" alt="mini-tart" />
+                </figure>
+              </a>
+              <a href="#" class="mini-tart"><h5>Mini Creamy Tart</h5></a>
+            </div>
+            <div class="img-recipe">
+              <a href="#" class="pancakes">
+                <figure>
+                  <img src="imgs2/pancakes.webp" alt="pancakes" />
+                </figure>
+              </a>
+              <a href="#" class="pancakes"><h5>American Pancakes</h5></a>
+            </div>
+            <div class="img-recipe">
+              <a href="#" class="fig-cake">
+                <figure>
+                  <img src="imgs2/fig-cake.jpg" alt="fig-cake" />
+                </figure>
+              </a>
+              <a href="#" class="fig-cake"
+                ><h5>Double Thick Layered Sponge cake</h5></a
+              >
+            </div>
+            <div class="img-recipe">
+              <a href="#" class="baklava">
+                <figure>
+                  <img src="imgs2/baklava.jpeg" alt="baklava" />
+                </figure>
+              </a>
+              <a href="#" class="baklava"><h5>Baklava</h5></a>
+            </div>
+            <div class="img-recipe">
+              <a href="#" class="banana-bread">
+                <figure>
+                  <img src="imgs2/bananabread.jpeg" alt="banana-bread" />
+                </figure>
+              </a>
+              <a href="#" class="banana-bread"><h5>Banana Bread</h5></a>
+            </div>
+            <div class="img-recipe">
+              <a href="#" class="caramel-cake">
+                <figure>
+                  <img src="imgs2/caramelcake.jpeg" alt="caramel-cake" />
+                </figure>
+              </a>
+              <a href="#" class="caramel-cake"><h5>Caramel cake</h5></a>
+            </div>
+            <div class="img-recipe">
+              <a href="#" class="macaroons">
+                <figure>
+                  <img src="imgs2/macaroons.jpg" alt="macaroons" />
+                </figure>
+              </a>
+              <a href="#" class="macaroons"><h5>Macaroons</h5></a>
+            </div>
+          </div>
+        </section>
+        <section class="footer">
+          <div class="mt-60 border-t-[1px] border-black pt-7">
+            <span class=""
+              >&copy; 2023 TasteOfTheGlobe - All rights reserved</span
+            >
+            <i class="text-lg float-right ml-3 fa-brands fa-twitter"></i>
+            <i class="text-lg float-right fa-brands fa-instagram"></i>
+          </div>
+        </section>
+      </div>
+    </section>
+  </body>
+</html>

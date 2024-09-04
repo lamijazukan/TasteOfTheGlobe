@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TasteOfTheGlobe</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <script
+      src="https://kit.fontawesome.com/206cb9b98d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- big section -->
+    <section class="TasteOfTheGlobe">
+      <div class="container">
+        <!-- pop up search -->
+        <div id="myOverlay" class="overlay">
+          <span class="closebtn" onclick="closeSearch()" title="Close Overlay"
+            >×</span
+          >
+          <div class="overlay-content">
+            <form action="">
+              <input type="text" placeholder="Search.." name="search" />
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+
+        <!-- pop up sign up -->
+        <div id="formOverlay" class="form-overlay">
+          <div class="form-content">
+            <span class="close-btn" onclick="closeForm()" title="Close Form"
+              >×</span
+            >
+            <div class="heading">SIGN UP</div>
+            <form action="">
+              <div class="data">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+
+              <div class="data">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+
+              <div class="data">
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Password"
+                  required
+                />
+              </div>
+
+              <div class="btn">
+                <button type="submit">Sign Up</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- navbar section -->
+        <header class="navigation-bar">
+          <div class="logo">
+            <h1>TasteOfTheGlobe</h1>
+          </div>
+          <div class="navbar">
+            <ul class="nav-links">
+              <li><a href="#" class="title">Home</a></li>
+              <li>
+                <a href="#" class="title"
+                  >Category <i class="fa-solid fa-angle-down"></i
+                ></a>
+                <div class="drop-down">
+                  <ul>
+                    <li><a href="#">Breakfast</a></li>
+                    <li><a href="#">Dinner</a></li>
+                    <li><a href="#">Lunch</a></li>
+                    <li><a href="#">Desserts</a></li>
+                    <li><a href="#">Soups</a></li>
+                    <li><a href="#">Pasta</a></li>
+                    <li><a href="#">Meat</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#" class="title"
+                  >Cuisines <i class="fa-solid fa-angle-down"></i
+                ></a>
+                <div class="drop-down">
+                  <ul>
+                    <li><a href="#">Asian</a></li>
+                    <li><a href="#">Bosnian</a></li>
+                    <li><a href="#">Turkish</a></li>
+                    <li><a href="#">Italian</a></li>
+                    <li><a href="#">American</a></li>
+                    <li><a href="#">Mexican</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="./dist/favourites.html" target="_blank" class="title"
+                  >Favourites</a
+                >
+              </li>
+              <li>
+                <a href="./dist/addrecipe.html" target="_blank" class="title"
+                  >Add Recipe</a
+                >
+              </li>
+              <li>
+                <a href="dist/profile.html" target="_blank" class="title"
+                  >Profile</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- search and login icons -->
+          <div class="info">
+            <button class="openBtn" onclick="openSearch()">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button class="open-Btn" onclick="openForm()">
+              <i class="fa-solid fa-user-plus"></i>
+            </button>
+          </div>
+        </header>
+
+        <!-- main recipe card with content -->
+        <div class="card">
+          <div class="card-img">
+            <img src="imgs/cheescake.jpeg" alt="cheescake" />
+          </div>
+          <div class="cheescake-description">
+            <h1>Mighty Super Cheesecake</h1>
+            <p>
+              Look no further for a creamy and ultra smooth classic cheesecake
+              recipe! no one can deny its simple decadence.
+            </p>
+            <div class="content-footer">
+              <div class="arrow">
+                <a href="dist/recipe.html" target="_blank"
+                  ><i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- recipe categories menu -->
+        <section class="popular-categories">
+          <h2 class="heading-1">Popular Categories</h2>
+          <div class="categories-container">
+            <div class="category">
+              <a href="#" class="breakfast"
+                ><figure>
+                  <img src="imgs/breakfast.jpeg" alt="breakfast" class="img1" />
+                </figure>
+                <h6>Breakfast</h6>
+              </a>
+            </div>
+            <div class="category">
+              <a href="#" class="dinner"
+                ><figure>
+                  <img src="imgs/dinner.jpeg" alt="dinner" class="img2" />
+                </figure>
+                <h6>Dinner</h6>
+              </a>
+            </div>
+            <div class="category">
+              <a href="#" class="pizza"
+                ><figure>
+                  <img src="imgs/pizza.jpeg" alt="pizza" class="img3" />
+                </figure>
+                <h6>Pizza</h6>
+              </a>
+            </div>
+            <div class="category">
+              <a href="#" class="snacks"
+                ><figure>
+                  <img src="imgs/snacks.jpeg" alt="snack" class="img4" />
+                </figure>
+                <h6>Snacks</h6>
+              </a>
+            </div>
+            <div class="category">
+              <a href="#" class="desserts"
+                ><figure>
+                  <img src="imgs/desserts.webp" alt="desserts" class="img5" />
+                </figure>
+                <h6>Desserts</h6>
+              </a>
+            </div>
+            <div class="category">
+              <a href="#" class="salads"
+                ><figure>
+                  <img src="imgs/salads.jpeg" alt="salads" class="img6" />
+                </figure>
+                <h6>Salads</h6>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- super delicious section -->
+        <section class="super-delicious">
+          <h2 class="heading-2">Super Delicious</h2>
+          <div class="delicious-recipes-container">
+            <div class="recipe-delicious">
+              <a href="#" class="pasta">
+                <figure>
+                  <img src="imgs/cheese pasta.webp" alt="cheese pasta" />
+                </figure>
+              </a>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <a href="#" class="pasta"><h5>Spinach and Cheese Pasta</h5></a>
+            </div>
+            <div class="recipe-delicious">
+              <a href="#" class="donuts">
+                <figure>
+                  <img src="imgs/donuts.jpeg" alt="glazed donuts" />
+                </figure>
+              </a>
+              <div class="stars1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <a href="#" class="donuts"><h5>Fancy Glazed Donuts</h5></a>
+            </div>
+            <div class="recipe-delicious">
+              <a href="#" class="burger">
+                <figure>
+                  <img src="imgs/burger.webp" alt="burger" />
+                </figure>
+              </a>
+              <div class="stars2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <a href="#" class="burger"><h5>Cheesy Breakfast Burger</h5></a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="container-2">
+        <div class="email-sending">
+          <p class="title"><strong>Deliciousness to your inbox</strong></p>
+          <p class="text2">
+            Enjoy weekly hand picked recipes and recommondations
+          </p>
+        </div>
+        <div class="email-box">
+          <input
+            type="email"
+            id="email2"
+            name="email"
+            placeholder="Email Address"
+            required
+          />
+          <button id="join" onclick="sendGreeting()">JOIN</button>
+        </div>
+        <div id="message" class="message">
+          <div class="greeting" id="greeting">
+            Check your inbox for new recipes!
+          </div>
+        </div>
+        <div id="message2" class="message2">
+          <div class="fail" id="fail">Email is required!</div>
+        </div>
+      </div>
+      <!-- container with collections and latest recipes -->
+      <div class="container">
+        <section class="cards">
+          <h1 class="heading-3">Cuisines Collections</h1>
+          <div class="recipe-collections">
+            <div class="collection">
+              <div class="img-wrapper">
+                <img src="imgs/asian.jpeg" alt="asian" />
+              </div>
+
+              <div class="card-footer">
+                <p>Asian cuisines</p>
+                <button>156 Recipes</button>
+              </div>
+            </div>
+            <div class="collection">
+              <div class="img-wrapper">
+                <img src="imgs/burek.jpg" alt="bosnian" />
+              </div>
+
+              <div class="card-footer">
+                <p>Bosnian cuisines</p>
+                <button>156 Recipes</button>
+              </div>
+            </div>
+            <div class="collection">
+              <div class="img-wrapper">
+                <img src="imgs/turkish.jpeg" alt="turkish" />
+              </div>
+              <div class="card-footer">
+                <p>Turkish cuisines</p>
+                <button>156 Recipes</button>
+              </div>
+            </div>
+            <div class="collection">
+              <div class="img-wrapper">
+                <img src="imgs/italian.jpeg" alt="italian" />
+              </div>
+              <div class="card-footer">
+                <p>Italian cuisines</p>
+                <button>156 Recipes</button>
+              </div>
+            </div>
+            <div class="collection">
+              <div class="img-wrapper">
+                <img src="imgs/american.jpg" alt="american" />
+              </div>
+
+              <div class="card-footer">
+                <p>American cuisines</p>
+                <button>156 Recipes</button>
+              </div>
+            </div>
+            <div class="collection">
+              <div class="img-wrapper">
+                <img src="imgs/mexican.jpeg" alt="mexican" />
+              </div>
+
+              <div class="card-footer">
+                <p>Mexican cuisines</p>
+                <button>156 Recipes</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--beginning of latest recipes section  -->
+        <section class="latest-recipes">
+          <h1 class="heading-4">Latest Recipes</h1>
+          <div class="latest-cards">
+            <div class="img-recipe">
+              <a href="#" class="strawberry-cake">
+                <figure>
+                  <img
+                    src="imgs/latest-recipe/strawberry-cake.webp"
+                    alt="strawberry-cake"
+                  />
+                </figure>
+              </a>
+              <a href="#" class="strawberry-cake"><h5>Strawberry cake</h5></a>
+            </div>
+            <div class="img-recipe">
+              <a href="#" class="chia-puding">
+                <figure>
+                  <img
+                    src="imgs/latest-recipe/chia-puding.jpeg"
+                    alt="chia-puding"
+                  />
+                </figure>
+              </a>
+              <a href="#" class="chia-puding"><h5>Chia Puding</h5></a>
+            </div>
+            <div class="img-recipe">
+              <a href="#" class="bcaramel-cup">
+                <figure>
+                  <img
+                    src="imgs/latest-recipe/caramel-cup.webp"
+                    alt="bcaramel-cup"
+                  />
+                </figure>
+              </a>
+              <a href="#" class="bcaramel-cup"><h5>Caramel Cup</h5></a>
+            </div>
+            <div class="img-recipe">
+              <a href="#" class="fruit-oatmeal">
+                <figure>
+                  <img
+                    src="imgs/latest-recipe/fruit-oatmeal.webp"
+                    alt="fruit-oatmeal"
+                  />
+                </figure>
+              </a>
+              <a href="#" class="fruit-oatmeal"><h5>Fruit Mix Oatmeal</h5></a>
+            </div>
+            <div class="img-recipe">
+              <a href="#" class="salmond-avocado">
+                <figure>
+                  <img
+                    src="imgs/latest-recipe/salmond-avocado.jpeg"
+                    alt="salmond-avocado"
+                  />
+                </figure>
+              </a>
+              <a href="#" class="salmond-avocado"
+                ><h5>Salmond and Avocado Toast</h5></a
+              >
+            </div>
+            <div class="img-recipe">
+              <a href="#" class="steak">
+                <figure>
+                  <img src="imgs/latest-recipe/soft-steak.jpeg" alt="steak" />
+                </figure>
+              </a>
+              <a href="#" class="steak"><h5>Soft Steak</h5></a>
+            </div>
+            <div class="img-recipe">
+              <a href="#" class="curry-chicken">
+                <figure>
+                  <img
+                    src="imgs/latest-recipe/curry-chicken.webp"
+                    alt="curry-chicken"
+                  />
+                </figure>
+              </a>
+              <a href="#" class="curry-chicken"
+                ><h5>Curry Chicken with Rice</h5></a
+              >
+            </div>
+            <div class="img-recipe">
+              <a href="#" class="fried-chicken">
+                <figure>
+                  <img
+                    src="imgs/latest-recipe/fried-chicken.jpeg"
+                    alt="fried-chicken"
+                  />
+                </figure>
+              </a>
+              <a href="#" class="fried-chicken"><h5>Fried Chicken</h5></a>
+            </div>
+            <div class="img-recipe">
+              <a href="#" class="mushroom-soup">
+                <figure>
+                  <img
+                    src="imgs/latest-recipe/mushroom-soup.jpeg"
+                    alt="mushroom-soup"
+                  />
+                </figure>
+              </a>
+              <a href="#" class="mushroom-soup"><h5>Mushroom Soup</h5></a>
+            </div>
+            <div class="img-recipe">
+              <a href="#" class="fried-chicken">
+                <figure>
+                  <img
+                    src="imgs/latest-recipe/fried-chicken.jpeg"
+                    alt="fried-chicken"
+                  />
+                </figure>
+              </a>
+              <a href="#" class="fried-chicken"><h5>Fried Chicken</h5></a>
+            </div>
+            <div class="img-recipe">
+              <a href="#" class="fried-chicken">
+                <figure>
+                  <img
+                    src="imgs/latest-recipe/fried-chicken.jpeg"
+                    alt="fried-chicken"
+                  />
+                </figure>
+              </a>
+              <a href="#" class="fried-chicken"><h5>Fried Chicken</h5></a>
+            </div>
+            <div class="img-recipe">
+              <a href="#" class="fried-chicken">
+                <figure>
+                  <img
+                    src="imgs/latest-recipe/fried-chicken.jpeg"
+                    alt="fried-chicken"
+                  />
+                </figure>
+              </a>
+              <a href="#" class="fried-chicken"><h5>Fried Chicken</h5></a>
+            </div>
+            <div class="img-recipe">
+              <a href="#" class="fried-chicken">
+                <figure>
+                  <img
+                    src="imgs/latest-recipe/fried-chicken.jpeg"
+                    alt="fried-chicken"
+                  />
+                </figure>
+              </a>
+              <a href="#" class="fried-chicken"><h5>Fried Chicken</h5></a>
+            </div>
+            <div class="img-recipe">
+              <a href="#" class="fried-chicken">
+                <figure>
+                  <img
+                    src="imgs/latest-recipe/fried-chicken.jpeg"
+                    alt="fried-chicken"
+                  />
+                </figure>
+              </a>
+              <a href="#" class="fried-chicken"><h5>Fried Chicken</h5></a>
+            </div>
+            <div class="img-recipe">
+              <a href="#" class="fried-chicken">
+                <figure>
+                  <img
+                    src="imgs/latest-recipe/fried-chicken.jpeg"
+                    alt="fried-chicken"
+                  />
+                </figure>
+              </a>
+              <a href="#" class="fried-chicken"><h5>Fried Chicken</h5></a>
+            </div>
+            <div class="img-recipe">
+              <a href="#" class="fried-chicken">
+                <figure>
+                  <img
+                    src="imgs/latest-recipe/fried-chicken.jpeg"
+                    alt="fried-chicken"
+                  />
+                </figure>
+              </a>
+              <a href="#" class="fried-chicken"><h5>Fried Chicken</h5></a>
+            </div>
+          </div>
+          <div class="center">
+            <button class="btn1" id="btn1" onclick="loadMore()">
+              Load More
+            </button>
+          </div>
+        </section>
+
+        <!-- footer -->
+        <section class="footer">
+          <div>
+            <span>&copy; 2023 TasteOfTheGlobe - All rights reserved</span>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
